@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenStreetMap with Leaflet</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        /* Set the size of the map */
+        #map {
+            height: 100vh;  /* 100% of the viewport height */
+            width: 100%;    /* 100% of the viewport width */
+        }
+    </style>
+</head>
+<body>
+
+<h3>NNRG College On Map</h3>
+<!-- The div element for the map -->
+<div id="map"></div>
+
+<!-- Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    // Initialize the map and set its view to nnrg coordinates and zoom level
+    const map = L.map('map').setView([17.403154150088064, 78.65151752066383], 13); // nnrg coordinates
+
+    // Set up the OpenStreetMap layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker to the map at the specified location
+    L.marker([17.403154150088064, 78.65151752066383]).addTo(map)
+        .bindPopup('NNRG')
+        .openPopup();
+</script>
+
+</body>
+</html>
