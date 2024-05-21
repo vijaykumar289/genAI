@@ -1,0 +1,95 @@
+Department XML:
+<departments>
+    <department>
+        <name>Computer Science</name>
+        <code>CSCI</code>
+    </department>
+    <department>
+        <name>Electrical Engineering</name>
+        <code>EE</code>
+    </department>
+    <!-- Add more departments as needed -->
+</departments>
+
+Department JSON:
+
+{
+    "departments": [
+        {
+            "name": "Computer Science",
+            "code": "CSCI"
+        },
+        {
+            "name": "Electrical Engineering",
+            "code": "EE"
+        }
+        /* Add more departments as needed */
+    ]
+}
+
+Year XML:
+
+<years>
+    <year>
+        <name>Freshman</name>
+        <code>FR</code>
+    </year>
+    <year>
+        <name>Sophomore</name>
+        <code>SO</code>
+    </year>
+    <!-- Add more years as needed -->
+</years>
+
+Year JSON:
+
+{
+    "years": [
+        {
+            "name": "Freshman",
+            "code": "FR"
+        },
+        {
+            "name": "Sophomore",
+            "code": "SO"
+        }
+        /* Add more years as needed */
+    ]
+}
+
+Student XML:
+
+<students>
+    <student>
+        <id>123456</id>
+        <name>John Doe</name>
+        <department>CSCI</department>
+        <year>FR</year>
+    </student>
+    <student>
+        <id>789012</id>
+        <name>Jane Smith</name>
+        <department>EE</department>
+        <year>SO</year>
+    </student>
+    <!-- Add more students as needed -->
+</students>
+
+Student JSON:
+{
+    "students": [
+        {
+            "id": "123456",
+            "name": "John Doe",
+            "department": "CSCI",
+            "year": "FR"
+        },
+        {
+            "id": "789012",
+            "name": "Jane Smith",
+            "department": "EE",
+            "year": "SO"
+        }
+        /* Add more students as needed */
+    ]
+}
