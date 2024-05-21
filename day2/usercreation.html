@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Creation Screen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-group .radio-label,
+        .form-group .checkbox-label {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Create New User</h2>
+    <form>
+        <!-- Text Input -->
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <!-- Email Input -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Password Input -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <!-- Text Area -->
+        <div class="form-group">
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" rows="4"></textarea>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="form-group">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male" class="radio-label">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female" class="radio-label">Female</label>
+        </div>
+
+        <!-- Drop-down List -->
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="india">Australia</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="form-group">
+            <label>Interests:</label>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding" class="checkbox-label">Coding</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music" class="checkbox-label">Music</label>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports" class="checkbox-label">Sports</label>
+        </div>
+
+        <!-- List -->
+        <div class="form-group">
+            <label for="hobbies">Select Your Hobbies:</label>
+            <select id="hobbies" name="hobbies" size="4" multiple required>
+                <option value="reading">Reading</option>
+                <option value="traveling">Traveling</option>
+                <option value="gaming">Gaming</option>
+                <option value="cooking">Cooking</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <button type="submit">Create Account</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
